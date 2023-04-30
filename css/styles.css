@@ -467,10 +467,6 @@ img {
   border: 1px solid var(--cornflower);
   border-top: none;
 }
-/* .app-name:hover,
-.app-name:focus {
-  border: 1px solid var(--cloud);
-} */
 .app-subtitle {
   margin-bottom: 8px;
 }
