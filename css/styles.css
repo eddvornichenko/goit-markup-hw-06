@@ -379,7 +379,6 @@ img {
 }
 .footer-columns {
   display: flex;
-  gap: 120px;
   align-items: baseline;
   justify-content: space-between;
 }
@@ -389,6 +388,9 @@ img {
 .footer-link {
   display: inline-block;
   margin-bottom: 16px;
+}
+.footer-container {
+  margin-right: 120px;
 }
 .footer-title-socials {
   width: 100%;
@@ -404,6 +406,9 @@ img {
   justify-content: center;
   align-items: center;
   gap: 16px;
+}
+.social-footer-container {
+  margin-right: 80px;
 }
 .footer-social-link {
   display: flex;
@@ -529,6 +534,7 @@ img {
   width: 408px;
   min-height: 576px;
   padding: 24px;
+  padding-top: 72px;
 
   background-color: var(--dairy);
   border-radius: 4px;
@@ -565,16 +571,18 @@ img {
 .modal-button:hover .modal-icon {
   fill: #ffffff;
 }
+.modal-button:focus .modal-icon {
+  fill: #ffffff;
+}
 .modal-title {
   display: block;
-  margin-top: 48px;
   margin-bottom: 16px;
 
   font-size: 16px;
   text-align: center;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.5%;
+  line-height: 1.5;
 
   color: var(--navy-blue);
 }
@@ -582,6 +590,11 @@ img {
 
 /* Footer Form */
 .subscribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
   min-width: 165px;
   height: 40px;
   padding: 8px 24px;
@@ -606,8 +619,12 @@ img {
 .subscribe-form-field {
 }
 .subscribe-form-input {
-  width: 100%;
+  width: 264px;
   height: 40px;
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
 
   background: transparent;
   border: 1px solid #ffffff;
@@ -631,22 +648,21 @@ img {
 .subscribe-form-input::placeholder {
   color: white;
 }
-.btn-icon {
+/* .btn-icon {
   position: relative;
-}
+} */
 .subscribe-icon {
-  position: absolute;
+  /* position: absolute; */
   fill: #ffffff;
-  top: 10px;
-  right: 24px;
+  /* right: 24px; */
 }
 /* Modal Form */
 .modal-form-label {
   display: block;
   margin-bottom: 4px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: var(--light-slate);
 }
 .modal-form-field {
@@ -657,13 +673,13 @@ img {
   width: 100%;
   height: 40px;
   padding: 0 38px;
+  font-size: 12px;
   border: 1px solid var(--navy-blue-modal);
   border-radius: 4px;
   transition: border var(--animation);
+  color: var(--slate);
 }
-.modal-form-input:hover,
-.modal-form-input:focus,
-.modal-form-input:active {
+.modal-form-input:focus {
   border: 1px solid var(--iris);
   outline: transparent;
 }
@@ -686,7 +702,7 @@ img {
   padding: 8px 16px;
   font-size: 12px;
   resize: none;
-  color: var(--navy-blue-modal);
+  color: var(--slate);
 
   border: 1px solid var(--navy-blue-modal);
   border-radius: 4px;
@@ -698,16 +714,19 @@ img {
   border: 1px solid var(--iris);
   outline: transparent;
 }
+.modal-form-message::placeholder {
+  color: var(--navy-blue-modal);
+}
 .modal-form-agreement {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 8px;
   margin-bottom: 24px;
 }
 .modal-form-agreement-text {
   font-size: 12px;
   color: var(--light-slate);
+  margin-left: 8px;
 }
 .modal-form-agreement-link {
   color: var(--iris);
