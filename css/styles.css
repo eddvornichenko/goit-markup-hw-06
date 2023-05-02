@@ -685,10 +685,10 @@ img {
 }
 .modal-form-icon {
   position: absolute;
-  top: -8%;
+  top: 50%;
   left: 12px;
 
-  transform: translateY(50%);
+  transform: translateY(-50%);
   fill: var(--navy-blue);
   transition: fill var(--animation);
 }
